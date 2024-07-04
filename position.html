@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        :root{
+            --primary-color: #314c6b;
+        }
+        div{
+            width:100px;
+            height:100px;
+            background-color: aquamarine;  
+        border: 2px solid var(--primary-color);      }
+
+        #parent{
+            position: relative;
+            background-color: var(--primary-color);
+        }
+
+        #child{
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="" id="parent">
+        <p id="child">Kuch  bhi likhde</p>
+    </div>
+</body>
+</html>

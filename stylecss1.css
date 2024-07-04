@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+}
+
+.logo {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 28px;
+  padding-left: 30px;
+}
+
+.navitems ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  padding-right: 40px;
+}
+
+ul li {
+  padding: 25px;
+}
+
+ul li:hover {
+  background-color: white;
+  color: black;
+}
+
+.background-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#bgimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Form {
+  height: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.formgrp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input[type=text], input[type=password], select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.remember-forgot {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#forgot {
+  margin-left: 10px;
+  color: black;
+}
+
+.login {
+  background-color: black;
+  text-align: center;
+  color: white;
+  border: 2px solid rgb(23, 23, 23);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.donthaveanacc {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.donthaveanacc a {
+  color: black;
+  text-decoration: none;
+}
+
+/* position prac */
+
+.position-prac {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 40%;
+  height: 400px;
+  position: relative;
+  top: 0px;
+  align-content: space-between;
+  margin: auto;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.boxes{
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center  ;
+
+}
+
+#item1{
+  background-color: greenyellow;
+  left:20px ;
+}
+#item2{
+  background-color: rgb(255, 145, 28);
+  left:80px ;
+}
+#item3{
+  background-color: rgb(230, 6, 92);
+  left: 120px;
+}
+#item4{
+  background-color: rgb(255, 200, 0);
+  left:150px ;
+}
+#item5{
+  background-color: rgb(255, 0, 72);
+  left: 180px;
+}
+#item6{
+  background-color: rgb(0, 183, 255);
+  left: 210px;
+}
+
+.gridprac{
+  width: 100%;
+  height: 600px;
+  display: grid;
+  border: 2px solid black;
+padding: 10px;
+
+grid-template-columns: 6fr 2fr 2fr 2fr;
+gap: 10px;
+}
+
+.gridbox{
+  height: auto;
+  
+}
+
+@media (max-width: 768px){
+  
+  .gridprac{
+    
+  grid-template-columns: 4fr 4fr 4fr;}
+  }
+  
+ 
+@media (max-width: 425px){
+  
+  .gridprac{
+    
+  grid-template-columns: 6fr 6fr;}
+  }
