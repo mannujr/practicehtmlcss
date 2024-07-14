@@ -5,32 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position</title>
     <style>
-        :root{
-            --primary-color: #314c6b;
+        *{
+            padding: 0;
+            margin-left: 50px;
         }
-        div{
-            width:100px;
-            height:100px;
-            background-color: aquamarine;  
-        border: 2px solid var(--primary-color);      }
-
-        #parent{
-            position: relative;
-            background-color: var(--primary-color);
+        .box {
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            transition: ease 0.5s;
+            display: flex;
+            justify-content: center; /* Horizontally centers the content */
+            align-items: center;    /* Vertically centers the content */
+            margin-top: 15px;
         }
-
         #child{
-            position: absolute;
-            top: 0;
+            margin: auto;
         }
+
+        #box1:hover {
+            transform: translate(100px, 0px);
+        }
+        
+        #box2:hover{
+            transform: scale(2, 2);
+
+        }
+        #box3:hover{
+            transform: skew(.312rad);
+        }
+        #box4:hover{
+            transform: rotate(45deg);
+        }
+        #box5:hover{
+            transform: matrix(1, 0.5, -0.5, 1, 100, 50);
+        }
+        #box6:hover{
+            transform: translateZ(50px);
+        }
+        #box7:hover{
+            transform: rotateY(45deg);
+        }
+        #box8:hover{
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 50, 0, 1);
+        }
+        #box9:hover{
+            transform: rotate(45deg) translateX(50px) scale(1.5);
+
+        }
+        #box10:hover{
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 50, 0, 1);
+        }
+        #box8:hover{
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 50, 0, 1);
+        }
+
+
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="" id="parent">
-        <p id="child">Kuch  bhi likhde</p>
+    
+    <div class="box"  id="box1">
+        <p id="child">translate</p>
     </div>
+    <div class="box" id="box2">
+        <p id="child"> scale(2,2) </p>
+    </div>
+    <div class="box" id="box3">
+        <p id="child">skew(20deg) </p>
+    </div>
+    <div class="box" id="box4">
+        <p id="child">rotate(45deg) </p>
+    </div>
+    <div class="box" id="box5">
+        <p id="child">matrix</p>
+    </div>
+    <div class="box" id="box6">
+        <p id="child"> translatez </p>
+    </div>
+    <div class="box" id="box7">
+        <p id="child"> rotateY </p>
+    </div>
+    <div class="box" id="box8">
+        <p id="child"> martrix </p>
+    </div>
+    <div class="box" id="box9">
+        <p id="child"> combo </p>
+    </div>
+ 
 </body>
 </html>
